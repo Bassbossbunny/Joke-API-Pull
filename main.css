@@ -1,23 +1,54 @@
-/* */
+/* comment syntax reminder */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DynaPuff:wght@400..700&display=swap');
+
 *{
     box-sizing: border-box;
     }
-
-#joketxt {
-    background-color: rgb(167, 167, 167);
-    border: 2px solid black;
+body {
+    background-color: #d8e2dc;
 }
 
-/*
-commented out until I understand why the div messed things up
+body h1 {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #6d6875;
+
+}  
+
+body p {
+    font-family: "Averia Libre", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    color:#6d6875 ;
+}
+
+div button {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing:auto;
+    font-style: normal;
+    color: #6d6875;
+    background-color: #e8e8e4;
+    border: 3px solid
+}
+
+#joketitle {
+    text-align: center;
+}
+
+#joketxt {
+    background-color: #e8e8e4;
+    border: 5px solid #6d6875;
+    text-align: center;
+}
+
+
+
 .buttonbar{
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.buttonbar button {
-    border: 2px solid rgb(221, 184, 228);
-    background-color: rgb(221, 184, 228);
-}
-    */

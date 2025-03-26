@@ -6,6 +6,10 @@ All CSS and HTML content was created by Rachel Payette and requires no attributo
 
 API is from https://v2.jokeapi.dev/
 
+**Googlefonts used**:
+-DynaPuff
+-Averia Libre
+
 
 **Websites referenced for syntax correction**:
 
@@ -18,6 +22,9 @@ Docs.Github.com
 https://validator.w3.org/
 
 https://jigsaw.w3.org/css-validator/validator
+
+https://www.site24x7.com/tools/javascript-validator.html
+
 
 Cheers, 
 > Rachel 

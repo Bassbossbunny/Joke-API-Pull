@@ -19,64 +19,38 @@ document.getElementById("pun").addEventListener("click", punjoke)
 
 document.getElementById("spook").addEventListener("click", spookyjoke)
 
+document.getElementById("chris").addEventListener("click", chrisjoke)
+
 document.getElementById("misc").addEventListener("click", miscjoke)
 
 
 });
 
 function progjoke(){
-    fetch("https://v2.jokeapi.dev/joke/Programming")
-    .then(Response => Response.json())
-    .then(data => {
-        if(data.type =="single") {
-            joketxt.textContent = data.joke;}
-         else {
-            joketxt.textContent = data.setup + "..." + data.delivery;
-        }
-    });
-    document.getElementById("joketitle").innerText = "Here's a Programming Joke";
+ alljoke("Programming", "Here's a programming joke!", "#ffe5d9")
+
 }
 
 function punjoke(){
-    fetch("https://v2.jokeapi.dev/joke/Pun")
-    .then(Response => Response.json())
-    .then(data => {
-        if(data.type =="single") {
-            joketxt.textContent = data.joke;}
-         else {
-            joketxt.textContent = data.setup + "..." + data.delivery;
-        }
-    });
-    document.getElementById("joketitle").innerText = "Here's a Pun!";
+  alljoke("Pun", "Here's a pun!", "#ffd7ba")
+
 }
 
 function spookyjoke(){
-    fetch("https://v2.jokeapi.dev/joke/Spooky")
-    .then(Response => Response.json())
-    .then(data => {
-        if(data.type =="single") {
-            joketxt.textContent = data.joke;}
-         else {
-            joketxt.textContent = data.setup + "..." + data.delivery;
-        }
-    });
-    document.getElementById("joketitle").innerText = "Here's a Spooky Joke";
+    alljoke("Spooky", "Here's a spooky Joke!", "#fec89a")
+
+}
+
+function chrisjoke(){
+    alljoke("Christmas","Here's a Joke for the Jolliest Holiday!", "#fcd5ce" )
+
 }
 
 function miscjoke(){
-    fetch("https://v2.jokeapi.dev/joke/Miscellaneous")
-    .then(Response => Response.json())
-    .then(data => {
-        if(data.type =="single") {
-            joketxt.textContent = data.joke;}
-         else {
-            joketxt.textContent = data.setup + "..." + data.delivery;
-        }
-    });
-    document.getElementById("joketitle").innerText = "Here's a miscellaneous Joke";
+    alljoke("Miscellaneous","Here's a miscellaneous Joke!", "#fec5bb" )
 }
 
-function alljoke(category, titletext){
+function alljoke(category, titletext, color){
     fetch("https://v2.jokeapi.dev/joke/"+ category)
     .then(Response => Response.json())
     .then(data => {
@@ -87,4 +61,5 @@ function alljoke(category, titletext){
         }
     });
     document.getElementById("joketitle").innerText = titletext;
+    document.body.style.background = color;
 }
