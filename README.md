@@ -8,6 +8,7 @@ API is from https://v2.jokeapi.dev/
 
 **Googlefonts used**:
 -DynaPuff
+
 -Averia Libre
 
 
