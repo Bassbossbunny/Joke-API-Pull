@@ -51,7 +51,7 @@ function miscjoke(){
 }
 
 function alljoke(category, titletext, color){
-    fetch("https://v2.jokeapi.dev/joke/"+ category)
+    fetch("https://v2.jokeapi.dev/joke/"+ category +"?safe-mode")
     .then(Response => Response.json())
     .then(data => {
         if(data.type =="single") {
