@@ -7,3 +7,17 @@
     background-color: rgb(167, 167, 167);
     border: 2px solid black;
 }
+
+/*
+commented out until I understand why the div messed things up
+.buttonbar{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttonbar button {
+    border: 2px solid rgb(221, 184, 228);
+    background-color: rgb(221, 184, 228);
+}
+    */
